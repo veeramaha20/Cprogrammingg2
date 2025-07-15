@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main() {
+
+    int num;
+
+    scanf("%d", &num);
+
+    
+
+    int first_two;
+
+    if (num < 10) {
+
+        printf("STDOUT\n");
+
+        return 0;
+
+    } else {
+
+        while (num >= 100) {
+
+            num /= 10;
+
+        }
+
+        first_two = num;
+
+    }
+
+
+
+    int tens = first_two / 10;
+
+    int units = first_two % 10;
+
+    
+
+    printf("%d%d\n", units, tens);
+
+    return 0;
+
+}
